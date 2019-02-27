@@ -10,5 +10,5 @@ package javafirstapplicationgit;
  * @author studente
  */
 public class Molecola {
-    
+    Atomo a3;
 }
