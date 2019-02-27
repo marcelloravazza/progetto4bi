@@ -13,4 +13,8 @@ public class Letto {
     String materasso;
     int cuscini;
     boolean fatto;
+    
+    Letto(){
+      fatto = false;
+    }
 }
