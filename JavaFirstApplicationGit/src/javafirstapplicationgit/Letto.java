@@ -16,23 +16,27 @@ public class Letto {
     
     public void Richiesta_Letti(){
         System.out.println("Quanti letti vuoi produrre?");
-        n_letti = new Scanner(System.in).nextInt();
+        n_letti = Integer.parseInt(input());
     }
    
     public void Dati_letto(){
         for (int i = 0; i < n_letti; i++) {
             System.out.println("\n------------------\n");
             System.out.println("Inserisci il nome del materasso:");
-            nome = new Scanner(System.in).nextLine();
+            nome = input();
             System.out.println("Inserisci la grandezza:");
-            grandezza = new Scanner(System.in).nextLine();
+            grandezza = input();
             System.out.println("Inserisci il numero di cuscini");
-            cuscini = Integer.parseInt(new Scanner(System.in).nextLine());
+            cuscini = Integer.parseInt(input());
             System.out.println("Inserisci il prezzo di vendita:");
-            prezzo = Integer.parseInt(new Scanner(System.in).nextLine());
+            prezzo = Integer.parseInt(input());
             System.out.println("\n------------------\n");
             Stampa(); 
         }
+    }
+    
+    public String input(){
+        return new Scanner(System.in).nextLine();
     }
   
     public void Stampa(){
