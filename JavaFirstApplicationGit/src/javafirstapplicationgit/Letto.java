@@ -10,15 +10,13 @@ public class Letto {
     String grandezza;
     int prezzo;
     
-    
-    Scanner s = new Scanner (System.in);
     Letto(){
-      fatto = false;
-      }
+        fatto = false;
+    }
     
     public void Richiesta_Letti(){
         System.out.println("Quanti letti vuoi produrre?");
-        n_letti = s.nextInt();
+        n_letti = new Scanner(System.in).nextInt();
     }
    
     public void Dati_letto(){
