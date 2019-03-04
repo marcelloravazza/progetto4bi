@@ -19,6 +19,7 @@ public class Main {
             m[i].setPrezzo(v.inputPrezzo());
             v.Separator();
             v.Stampa(m[i].getNomeMaterasso(), m[i].getGrandezza(), m[i].getCuscini(), m[i].getPrezzo());
+            v.Powered();
         }
         
         
