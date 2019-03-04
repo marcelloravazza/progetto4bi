@@ -6,7 +6,7 @@ public class Main {
         Letto l = new Letto();
         l.Richiesta_Letti();
         l.Dati_letto();
-        System.out.println("Powered by Leonardo and Alessandro");
+        System.out.println("\n Powered by Leonardo and Alessandro \n");
     }
     
 }
