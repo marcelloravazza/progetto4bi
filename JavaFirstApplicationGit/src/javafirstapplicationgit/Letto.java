@@ -23,23 +23,25 @@ public class Letto {
    
     public void Dati_letto(){
         for (int i = 0; i < n_letti; i++) {
-          System.out.println("Inserisci il nome del materasso:");
-          nome = new Scanner(System.in).nextLine();
-          System.out.println("Inserisci la grandezza:");
-          grandezza = new Scanner(System.in).nextLine();
-          System.out.println("Inserisci il prezzo di vendita:");
-          prezzo = new Scanner(System.in).nextInt();
-            System.out.println("------------------");
-          Stampa(); 
-            System.out.println("------------------");
+            System.out.println("\n------------------\n");
+            System.out.println("Inserisci il nome del materasso:");
+            nome = new Scanner(System.in).nextLine();
+            System.out.println("Inserisci la grandezza:");
+            grandezza = new Scanner(System.in).nextLine();
+            System.out.println("Inserisci il numero di cuscini");
+            cuscini = Integer.parseInt(new Scanner(System.in).nextLine());
+            System.out.println("Inserisci il prezzo di vendita:");
+            prezzo = Integer.parseInt(new Scanner(System.in).nextLine());
+            System.out.println("\n------------------\n");
+            Stampa(); 
         }
     }
   
     public void Stampa(){
-        System.out.println("Nome del materasso:" +nome);
-        System.out.println("Grandezza materasso:" +grandezza);
-        System.out.println("Prezzo:" +prezzo);
-       
+        System.out.println("Nome del materasso:" + nome);
+        System.out.println("Grandezza materasso:" + grandezza);
+        System.out.println("Cuscini richiesti: " + cuscini);
+        System.out.println("Prezzo:" + prezzo);
     }
     
     
