@@ -44,8 +44,7 @@ public class Letto {
         System.out.println("Grandezza materasso:" + grandezza);
         System.out.println("Cuscini richiesti: " + cuscini);
         System.out.println("Prezzo:" + prezzo);
+    
     }
-    
-    
 }
 
