@@ -26,7 +26,7 @@ public class Letto {
             System.out.println("\n------------------\n");
             System.out.println("Inserisci il nome del materasso:");
             nome = input();
-            System.out.println("Inserisci la grandezza:");
+            System.out.println("Inserisci la lunghezza e la larghezza (LUxLA):");
             grandezza = input();
             System.out.println("Inserisci il numero di cuscini");
             cuscini = Integer.parseInt(input());
