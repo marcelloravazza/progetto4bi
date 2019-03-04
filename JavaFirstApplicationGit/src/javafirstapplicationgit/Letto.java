@@ -14,7 +14,6 @@ public class Letto {
         fatto = false;
     }
     
-    //LEO MERDA
     
     public void Richiesta_Letti(){
         System.out.println("Quanti letti vuoi produrre?");
