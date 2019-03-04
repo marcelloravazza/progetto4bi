@@ -36,6 +36,10 @@ public class View {
         System.out.println("\n----------\n");
     }
     
+    public void Powered(){
+        System.out.println("Powered by Leonardo e Alessandro");
+    }
+    
     public void Stampa(String nome, String grandezza, int cuscini, int prezzo){
         System.out.println("Nome del materasso:         " + nome);
         System.out.println("Grandezza del materasso:    " + grandezza);
