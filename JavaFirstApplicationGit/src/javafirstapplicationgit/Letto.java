@@ -11,7 +11,7 @@ public class Letto {
     int prezzo;
     
     Letto(){
-        fatto = false;
+        fatto = true;
     }
     
     
