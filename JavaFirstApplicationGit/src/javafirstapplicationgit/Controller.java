@@ -11,15 +11,19 @@ public class Controller {
         for (int i = 0; i < model.length; i++) {
             model[i] = new Model();
         }
-        for (int i = 0; i < model.length; i++) {
-            model[i].setNomeMaterasso(view.inputMaterasso());
-            model[i].setGrandezza(view.inputGrandezza());
-            model[i].setCuscini(view.numCuscini());
-            model[i].setPrezzo(view.inputPrezzo());
+        for (Model modArray : model) {
+            modArray.setNomeMaterasso(view.inputMaterasso());
+            modArray.setGrandezza(view.inputGrandezza());
+            modArray.setCuscini(view.numCuscini());
+            modArray.setPrezzo(view.inputPrezzo());
             view.Separator();
-            view.Stampa(model[i].getNomeMaterasso(), model[i].getGrandezza(), model[i].getCuscini(), model[i].getPrezzo());
-            view.Powered();
         }
+        for (Model modArray : model) {
+            view.Separator();
+            view.Stampa(modArray.getNomeMaterasso(), modArray.getGrandezza(), modArray.getCuscini(), modArray.getPrezzo());
+            
+        }
+        view.Powered();
         
         
         
