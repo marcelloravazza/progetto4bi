@@ -2,24 +2,23 @@ package javafirstapplicationgit;
 
 public class Controller {
     
-    private static Model m[];
-    private static View v;
+    private static final View view = new View();
+    private static final Model[] model = new Model[view.numLetti()];
     
     public static void main(String[] args) {
-        v = new View();
-        m = new Model[v.numLetti()];
         
-        for (int i = 0; i < m.length; i++) {
-            m[i] = new Model();
+        
+        for (int i = 0; i < model.length; i++) {
+            model[i] = new Model();
         }
-        for (int i = 0; i < m.length; i++) {
-            m[i].setNomeMaterasso(v.inputMaterasso());
-            m[i].setGrandezza(v.inputGrandezza());
-            m[i].setCuscini(v.numCuscini());
-            m[i].setPrezzo(v.inputPrezzo());
-            v.Separator();
-            v.Stampa(m[i].getNomeMaterasso(), m[i].getGrandezza(), m[i].getCuscini(), m[i].getPrezzo());
-            v.Powered();
+        for (int i = 0; i < model.length; i++) {
+            model[i].setNomeMaterasso(view.inputMaterasso());
+            model[i].setGrandezza(view.inputGrandezza());
+            model[i].setCuscini(view.numCuscini());
+            model[i].setPrezzo(view.inputPrezzo());
+            view.Separator();
+            view.Stampa(model[i].getNomeMaterasso(), model[i].getGrandezza(), model[i].getCuscini(), model[i].getPrezzo());
+            view.Powered();
         }
         
         
