@@ -3,10 +3,10 @@ package javafirstapplicationgit;
 public class Controller {
     
     private static Model m[];
-    private static View v = new View();
+    private static View v;
     
     public static void main(String[] args) {
-        
+        v = new View();
         m = new Model[v.numLetti()];
         
         for (int i = 0; i < m.length; i++) {
