@@ -1,5 +1,4 @@
 package javafirstapplicationgit;
-import java.util.*;
  
 public class Model {
     int cuscini;
